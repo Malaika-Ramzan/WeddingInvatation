@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #f8f1e7;
+    color: #fff;
+}
+
+/* FIRST PAGE */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("https://images.pexels.com/photos/38766206/pexels-photo-38766206.jpeg");
+    background-size: cover;
+    background-position: center;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(35, 20, 25, 0.55);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+
+    padding: 40px;
+}
+
+.small-heading {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 400;
+
+    margin-bottom: 10px;
+}
+
+.hero-content h2 {
+    font-size: 72px;
+    font-weight: 600;
+
+    color: #e8c98f;
+
+    margin-bottom: 25px;
+}
+
+.hero-content h2 span {
+    color: #fff;
+    font-size: 55px;
+    margin: 0 10px;
+}
+
+.invitation-date {
+    font-size: 17px;
+    letter-spacing: 2px;
+
+    margin-bottom: 35px;
+}
+
+.next-btn {
+    padding: 15px 32px;
+
+    background-color: transparent;
+    color: #f5d99d;
+
+    border: 1px solid #e8c98f;
+    border-radius: 30px;
+
+    font-size: 15px;
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: all 0.4s ease;
+}
+
+.next-btn span {
+    margin-left: 8px;
+}
+
+.next-btn:hover {
+    background-color: #e8c98f;
+    color: #351d25;
+
+    transform: translateY(-3px);
+}
+/* SECOND PAGE - WEDDING DAY */
+
+.wedding-day {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #f8f1e7;
+    color: #4a3030;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 30px;
+}
+
+.day-content {
+    width: 90%;
+    max-width: 900px;
+}
+
+.section-small {
+    color: #a77b45;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 18px;
+}
+
+.day-content h2 {
+    color: #4a3030;
+
+    font-size: 55px;
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+.gold-line {
+    width: 80px;
+    height: 2px;
+
+    background-color: #c9a45c;
+
+    margin: 0 auto 30px;
+}
+
+.day-message {
+    width: 70%;
+    margin: 0 auto 45px;
+
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.wedding-details {
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    gap: 25px;
+
+    margin-bottom: 45px;
+}
+
+.detail-box {
+    width: 30%;
+
+    padding: 30px 20px;
+
+    background-color: #fffaf3;
+
+    border: 1px solid #d9bd82;
+
+    transition: all 0.4s ease;
+}
+
+.detail-box:hover {
+    transform: translateY(-8px);
+}
+
+.detail-box h3 {
+    color: #a77b45;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 15px;
+}
+
+.detail-box p {
+    color: #4a3030;
+
+    font-size: 17px;
+    font-weight: 500;
+}/* THIRD PAGE - WEDDING EVENTS */
+
+.events-section {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #3b2428;
+    color: #fff;
+
+    padding: 90px 40px;
+
+    text-align: center;
+}
+
+.events-heading > p:first-child {
+    color: #d9bd82;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+.events-heading h2 {
+    color: #f5dfad;
+
+    font-size: 50px;
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+.events-intro {
+    width: 600px;
+    max-width: 90%;
+
+    margin: 0 auto 55px;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* EVENT CARDS */
+
+.events-container {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 25px;
+
+    margin-bottom: 50px;
+}
+
+.event-card {
+    width: 300px;
+
+    background-color: #fffaf3;
+
+    border: 1px solid #d9bd82;
+
+    overflow: hidden;
+
+    transition: all 0.4s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+}
+
+
+/* EVENT IMAGE */
+
+.event-image {
+    width: 100%;
+    height: 210px;
+
+    background-size: cover;
+    background-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+.event-card:hover .event-image {
+    transform: scale(1.05);
+}
+
+
+/* EVENT PICTURES */
+
+.bridal-shower {
+    background-image: url("https://images.pexels.com/photos/1729797/pexels-photo-1729797.jpeg");
+}
+
+.haldi {
+    background-image: url("https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg");
+}
+
+.mehndi {
+    background-image: url("https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg");
+}
+
+.baraat {
+    background-image: url("https://images.pexels.com/photos/3014019/pexels-photo-3014019.jpeg");
+}
+
+.walima {
+    background-image: url("https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg");
+}
+
+
+/* EVENT TEXT */
+
+.event-info {
+    padding: 25px 20px 30px;
+}
+
+.event-info h3 {
+    color: #5a3636;
+
+    font-size: 25px;
+    font-weight: 600;
+
+    margin-bottom: 10px;
+}
+
+.event-date {
+    color: #b38b4d;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 15px;
+}
+
+.event-info p:last-child {
+    color: #725858;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+.events-btn {
+    border-color: #d9bd82;
+    color: #f5dfad;
+}
+
+.events-btn:hover {
+    background-color: #d9bd82;
+    color: #3b2428;
+}
+/* FOURTH PAGE - MEMORIES */
+
+.memories-section {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #f8f1e7;
+    color: #4a3030;
+
+    padding: 90px 40px;
+
+    text-align: center;
+}
+
+
+/* HEADING */
+
+.memories-heading > p:first-child {
+    color: #a77b45;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 15px;
+}
+
+.memories-heading h2 {
+    color: #4a3030;
+
+    font-size: 52px;
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+.memories-intro {
+    width: 600px;
+    max-width: 90%;
+
+    margin: 0 auto 50px;
+
+    color: #725858;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* PHOTO GALLERY */
+
+.memory-gallery {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 0 auto 55px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: stretch;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+}
+
+
+/* INDIVIDUAL PHOTOS */
+
+.memory-photo {
+    width: 31%;
+    height: 280px;
+
+    background-size: cover;
+    background-position: center;
+
+    border: 5px solid #fffaf3;
+
+    box-shadow: 0 5px 20px rgba(60, 35, 35, 0.15);
+
+    transition: all 0.5s ease;
+}
+
+
+/* HOVER EFFECT */
+
+.memory-photo:hover {
+    transform: scale(1.04);
+
+    box-shadow: 0 12px 30px rgba(60, 35, 35, 0.25);
+}
+
+
+/* MEMORY PICTURES */
+
+.photo-one {
+    background-image: url("https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg");
+}
+
+.photo-two {
+    background-image: url("https://images.pexels.com/photos/38766206/pexels-photo-38766206.jpeg");
+}
+
+.photo-three {
+    background-image: url("https://images.pexels.com/photos/3014019/pexels-photo-3014019.jpeg");
+}
+
+.photo-four {
+    background-image: url("https://images.pexels.com/photos/265856/pexels-photo-265856.jpeg");
+}
+
+.photo-five {
+    background-image: url("https://images.pexels.com/photos/1729797/pexels-photo-1729797.jpeg");
+}
+
+.photo-six {
+    background-image: url("https://images.pexels.com/photos/1488310/pexels-photo-1488310.jpeg");
+}
+
+
+/* BUTTON */
+
+.memories-btn {
+    color: #a77b45;
+
+    border-color: #c9a45c;
+}
+
+.memories-btn:hover {
+    background-color: #c9a45c;
+
+    color: #fffaf3;
+}
+/* FIFTH PAGE - THANK YOU */
+
+.thank-you-section {
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: #3b2428;
+    color: #fffaf3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 30px;
+
+    position: relative;
+}
+
+
+/* DECORATIVE BORDER */
+
+.thank-you-section::before {
+    content: "";
+
+    width: 85%;
+    height: 85%;
+
+    border: 1px solid #c9a45c;
+
+    position: absolute;
+}
+
+
+/* CONTENT */
+
+.thank-you-content {
+    width: 800px;
+    max-width: 90%;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+.thank-small {
+    color: #d9bd82;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 20px;
+}
+
+
+.thank-you-content h2 {
+    color: #f5dfad;
+
+    font-size: 70px;
+    font-weight: 500;
+
+    margin-bottom: 15px;
+}
+
+
+.thank-you-content h3 {
+    color: #fffaf3;
+
+    font-size: 25px;
+    font-weight: 500;
+
+    margin-bottom: 25px;
+}
+
+
+.thank-message {
+    width: 650px;
+    max-width: 100%;
+
+    margin: 0 auto 12px;
+
+    color: #eadfd6;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* HEART */
+
+.heart {
+    color: #d9bd82;
+
+    font-size: 35px;
+
+    margin: 30px 0 15px;
+}
+
+
+.couple-name {
+    color: #f5dfad;
+
+    font-size: 35px;
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
+
+.closing-text {
+    color: #d9bd82;
+
+    font-size: 14px;
+
+    letter-spacing: 3px;
+}
